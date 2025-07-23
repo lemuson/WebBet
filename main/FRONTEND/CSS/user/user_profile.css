@@ -1,0 +1,175 @@
+* {
+    font-family: Tektur;
+}
+
+body {
+    background-color: #DAD4C6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.page-exit {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+.profile-container {
+    width: 95%;
+    height: 80vh;
+    display: flex;
+    gap: 15px;
+}
+
+.left-block {
+    background-color: #232323;
+    border-radius: 8px;
+    width: 40%;
+    overflow: auto;
+}
+
+.right-block {
+    background-color: #232323;
+    border-radius: 8px;
+    width: 60%;
+    overflow: auto;
+}
+
+
+@media (max-width: 1000px) {
+    body {
+        height: auto;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        margin: 50px;
+        height: auto;
+    }
+
+    .left-block {
+        width: 100%;
+        min-height: 40vh;
+        height: auto;
+    }
+    
+    .right-block {
+        width: 100%;
+        min-height: 60vh;
+        height: auto;
+    }
+}
+
+.input-group {
+    margin: 25px;
+    padding: 5px;
+    border: 1px solid #DAD4C6;
+    border-radius: 5px;
+    position: relative;
+}
+
+.input-group label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #232323;
+    padding: 0 5px;
+    font-size: 0.9em;
+    color: #DAD4C6;
+    white-space: nowrap
+}
+
+.input-group input[type="text"] {
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #232323;
+    color: #DAD4C6;
+}
+
+.input-group input[type="password"] {
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #232323;
+    color: #DAD4C6;
+}
+
+.edit-button {
+    width: 50%;
+    background-color: #DAD4C6;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 10px;
+    display: block;
+    margin: 20px auto;
+    border: none;
+}
+
+.save-cancel-buttons {
+    display: none;
+    justify-content: space-around;
+    margin-top: 0px;
+}
+
+.save-cancel-buttons button {
+    width: 40%;
+    background-color: #DAD4C6;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    border: none;
+    padding: 10px;
+}
+
+.bets-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #DAD4C6;
+
+}
+
+.bets-table th, .bets-table td {
+    padding: 10px;
+    border: 1px solid #666;
+    text-align: center;
+}
+
+.bets-table th {
+    font-weight: bold;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    background-color: #232323;
+}
+
+.bets-table td a {
+    color: #666;
+}
+.bets-table td a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.balance-box {
+    position: absolute;
+    top: -10px;
+    right: 40px;
+    background-color: #232323;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 1000;
+}

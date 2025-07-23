@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/CSS/admin/admin_matches.css">
+    <link rel="stylesheet" href="/static/CSS/nav.css">
+
+    <script src = "/static/JavaScript/admin/admin_matches.js"></script>
+</head>
+
+<body>
+    <!-- НАВИГАЦИЯ -->
+    <div class="nav">
+        <input type="checkbox">
+        <span></span>
+        <span></span>
+        <div class="nav-menu">
+            <li><a href="/Web-Bet/matches" onclick="animateExit(event)">Главная</a></li>
+            <li><a href="/Web-Bet/profile" onclick="animateExit(event)">Профиль</a></li>
+            <li><a href="/Web-Bet/logout" onclick="animateExit(event)">Выйти</a></li>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- ВЫБОР СПОРТА -->
+        <div class="slider-container">
+            <button class="slider-button prev"></button>
+            <div class="slider" id="sports-container">
+                <!--ВИДЫ СПОРТА-->
+            </div>
+            <button class="slider-button next">></button>
+        </div>
+
+        <!-- МАТЧИ -->
+        <div class="matches-container" id="matches-container">
+            <!--КАРТОЧКИ МАТЧЕЙ-->
+        </div>
+    </div>
+</body>
+</html>

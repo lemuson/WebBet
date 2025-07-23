@@ -1,0 +1,97 @@
+* {
+    font-family: Tektur;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #DAD4C6;
+    perspective: 1000px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+    border-radius: 8px;
+    min-width: 300px;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.container.rotate {
+    transform: rotateY(180deg);
+}
+
+.login-container, .register-container {
+    background-color: #232323;
+    border-radius: 8px;
+    width: 100%;
+    padding: 20px;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    text-align: center;
+    color: #DAD4C6;
+}
+
+.register-container {
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+.input-group {
+    margin: 15px 0;
+    padding: 5px;
+    border: 1px solid #DAD4C6;
+    border-radius: 5px;
+    position: relative;
+}
+
+.input-group label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #232323;
+    padding: 0 5px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    cursor: default;
+}
+
+.input-group input {
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #232323;
+    color: #DAD4C6;
+}
+
+form {
+    margin-bottom: 15px;
+}
+
+a, label {
+    background-color: transparent;
+    color: #DAD4C6;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button {
+    width: 60%;
+    background-color: #DAD4C6;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 10px;
+}

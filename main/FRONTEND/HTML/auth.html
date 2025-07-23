@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/CSS/auth.css">
+    <script src="/static/JavaScript/auth.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h2>Вход</h2>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="login-username">Имя пользователя</label>
+                    <input type="text" id="login-username">
+                </div>
+
+                <div class="input-group">
+                    <label for="login-password">Пароль</label>
+                    <input type="password" id="login-password">
+                </div>
+                
+                <button type="submit">Войти</button>
+            </form>
+            <label>Нет аккаунта? <a onclick="toggleForm()">Зарегистрироваться</a> </label>
+        </div>
+
+        <div class="register-container">
+            <h2>Регистрация</h2>
+            <form id="register-form">
+                <div class="input-group">
+                    <label for="register-username">Имя пользователя</label>
+                    <input type="text" id="register-username">
+                </div>
+
+                <div class="input-group">
+                    <label for="register-name">Имя</label>
+                    <input type="text" id="register-name">
+                </div>
+
+                <div class="input-group">
+                    <label for="register-phone">Номер телефона</label>
+                    <input type="text" id="register-phone">
+                </div>
+
+                <div class="input-group">
+                    <label for="register-password">Пароль</label>
+                    <input type="password" id="register-password">
+                </div>
+                
+                <div class="input-group">
+                    <label for="register-promo">Промокод</label>
+                    <input type="text" id="register-promo">
+                </div>
+                
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+            <label> Уже есть аккаунт? <a onclick="toggleForm()">Войти</a> </label>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация о матче</title>
+    <link rel="stylesheet" href="/static/CSS/user/user_match_info.css">
+    <link rel="stylesheet" href="/static/CSS/nav.css">
+
+    <script src="/static/JavaScript/user/user_match_info.js"></script>
+</head>
+<body>
+    <!-- БАЛАНС -->
+    <div class="balance-box" id="balance">Баланс: </div>
+
+    <!-- НАВИГАЦИЯ -->
+    <div class="nav">
+        <input type="checkbox">
+        <span></span>
+        <span></span>
+        <div class="nav-menu">
+            <li><a href="/Web-Bet/matches" onclick="animateExit(event)">Главная</a></li>
+            <li><a href="/Web-Bet/profile" onclick="animateExit(event)">Профиль</a></li>
+            <li><a href="/Web-Bet/logout" onclick="animateExit(event)">Выйти</a></li>
+        </div>
+    </div>
+
+    <!-- ИНФОРМАЦИЯ О МАТЧЕ -->
+    <div class="match-container" id="match-container">
+        <h1>Ставка на матч</h1>
+        <h2 id="match-date">Дата начала матча: ...</h2>
+
+        <div class="teams-container">
+            <div class="team">
+                <img id="team1-img" src="" alt="Логотип команды 1">
+                <span id="team1-name"></span>
+            </div>
+            <div class="team">
+                <img id="team2-img" src="" alt="Логотип команды 2">
+                <span id="team2-name"></span>
+            </div>
+        </div>
+
+        <div class="odds-container">
+            <div class="labels" id="labels-container">
+                <!-- ПРОГНОЗЫ -->
+            </div>
+            <div class="odds" id="odds-container">
+                <!-- КОЭФФИЦИЕНТЫ -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

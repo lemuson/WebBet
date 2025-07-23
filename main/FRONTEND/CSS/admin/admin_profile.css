@@ -1,0 +1,153 @@
+* {
+    font-family: Tektur, sans-serif;
+}
+
+body {
+    background-color: #DAD4C6;
+    margin: 0;
+    padding: 0;
+}
+
+.page-container {
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+}
+
+.page-container .columns, .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.form-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+form {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    color: #DAD4C6;
+    flex-direction: column;
+    background-color: #161919;
+}
+
+button {
+    align-self: center;
+    width: 95%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #AAA69C;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #434240;
+}
+
+form h1{
+    text-align: center;
+    color: #DAD4C6;
+    margin: 0px;
+    font-size: 18px
+}
+
+.input-group {
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid #DAD4C6;
+    border-radius: 5px;
+    position: relative;
+}
+
+.input-group label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #161919;
+    padding: 0 5px;
+    font-size: 0.9em;
+    color: #DAD4C6;
+    white-space: nowrap
+}
+
+.input-group input[type="text"],
+.input-group input[type="datetime-local"],
+.input-group input[type="file"],
+.input-group select
+{
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #161919;
+    color: #DAD4C6;
+}
+
+.odd input[type="number"]{
+    width: 40%;
+    min-width: 40px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #DAD4C6;
+    border-radius: 5px;
+    background-color: #161919;
+    color: #DAD4C6;
+    text-align: center;
+}
+
+.odds-container {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    max-width: 100%;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+
+.odd {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.odd legend {
+    font-size: 20px;
+    color: #DAD4C6;
+}
+
+.odds-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.odds-container::-webkit-scrollbar-track {
+    background: #161919;
+    border-radius: 10px;
+}
+
+.odds-container::-webkit-scrollbar-thumb {
+    background-color: #AAA69C;
+    border-radius: 10px;
+    border: 2px solid #161919;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

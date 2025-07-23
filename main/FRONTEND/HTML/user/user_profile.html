@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/CSS/user/user_profile.css">
+    <link rel="stylesheet" href="/static/CSS/nav.css">
+
+    <script src="/static/JavaScript/user/user_profile.js"></script>
+</head>
+
+<body>
+    <!-- БАЛАНС -->
+    <div class="balance-box" id="balance">Баланс: </div>
+
+    <!-- НАВИГАЦИЯ -->
+    <div class="nav">
+        <input type="checkbox">
+        <span></span>
+        <span></span>
+        <div class="nav-menu">
+            <li><a href="/Web-Bet/matches" onclick="animateExit(event)">Главная</a></li>
+            <li><a href="/Web-Bet/profile" onclick="animateExit(event)">Профиль</a></li>
+            <li><a href="/Web-Bet/logout" onclick="animateExit(event)">Выйти</a></li>
+        </div>
+    </div>
+    
+    <!-- ИНФОРМАЦИЯ О ПРОФИЛЕ -->
+    <div class="profile-container">
+        <!-- ДАННЫЕ ПРОФИЛЯ -->
+        <div class="left-block">
+            <div class="input-group">
+                <label>Имя пользователя</label>
+                <input type="text" id="login" readonly>
+            </div>
+
+            <div class="input-group">
+                <label>Имя</label>
+                <input type="text" id="name" readonly>
+            </div>
+
+            <div class="input-group">
+                <label>Номер телефона</label>
+                <input type="text" id="phone" readonly>
+            </div>
+
+            <!-- <div class="input-group">
+                <label>Пароль</label>
+                <input type="password" id="password" readonly>
+            </div> -->
+        </div>
+
+        <!-- ДАННЫЕ О СТАВКАХ -->
+        <div class="right-block">
+            <table class="bets-table" id="bets-table">
+                <thead>
+                    <tr>
+                        <th>Событие</th>
+                        <th>Ставка</th>
+                        <th>Коэффициент</th>
+                        <th>Прогноз</th>
+                        <th>Результат</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- СТАВКИ -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

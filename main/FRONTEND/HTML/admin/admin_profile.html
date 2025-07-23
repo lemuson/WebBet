@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/CSS/admin/admin_profile.css">
+    <link rel="stylesheet" href="/static/CSS/nav.css">
+    <meta charset="UTF-8">
+    <title>Администратор</title>
+    <script src="/static/JavaScript/admin/admin_profile.js"></script>
+</head>
+
+<body>
+    <!-- НАВИГАЦИЯ -->
+    <div class="nav">
+        <input type="checkbox">
+        <span></span>
+        <span></span>
+        <div class="nav-menu">
+            <li><a href="/Web-Bet/matches" onclick="animateExit(event)">Главная</a></li>
+            <li><a href="/Web-Bet/profile" onclick="animateExit(event)">Профиль</a></li>
+            <li><a href="/Web-Bet/logout" onclick="animateExit(event)">Выйти</a></li>
+        </div>
+    </div>
+
+    <!-- НАПОЛНЕНИЕ -->
+    <div class="page-container">
+        <div class="columns">
+            <!-- ВИДЫ СПОРТА -->
+            <div class="form-wrapper">
+                <form id="create-sport-form">
+                    <h1>Вид спорта</h1>
+                    <div class="input-group">
+                        <label>Название</label>
+                        <input type="text" id="sport-name">
+                    </div>
+                    <div class="input-group">
+                        <label>Иконка</label>
+                        <input type="text" id="sport-image">
+                    </div>
+                    <button type="submit">Сохранить</button>
+                </form>
+            </div>
+
+            <!-- КОМАНДЫ -->
+            <div class="form-wrapper">
+                <form id="create-team-form">
+                    <h1>Команды</h1>
+                    <div class="input-group">
+                        <label>Название</label>
+                        <input type="text" id="team-name">
+                    </div>
+                    <div class="input-group">
+                        <label for="team-image">Изображение</label>
+                        <input type="file" id="team-image" accept="image/*">
+                    </div>
+                    <button type="submit">Сохранить</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- МАТЧИ -->
+        <div class="form-wrapper">
+            <form id="create-match-form">
+                <h1>Матчи</h1>
+                <div class="input-group">
+                    <label>Дата</label>
+                    <input type="datetime-local" id="match-date">
+                </div>
+                <div class="input-group">
+                    <label>Вид спорта</label>
+                    <select id="sport-select" required>
+                        <!-- ВИДЫ СПОРТА -->
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Команда 1</label>
+                    <select id="team1-select" required>
+                        <!-- КОМАНДЫ -->
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Команда 2</label>
+                    <select id="team2-select" required>
+                        <!-- КОМАНДЫ -->
+                    </select>
+                </div>
+                <div class="odds-container" id="odds">
+                    <!-- СТАВКИ -->
+                </div>
+                <button type="submit">Сохранить</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
